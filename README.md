@@ -1,2 +1,3 @@
 # Audio-JS-Carousel
-Flexbox and javascript
+
+Animated Crhistmass audio carousel with snow aniamtion
