@@ -1,3 +1,3 @@
 # Audio-JS-Carousel
 
-Animated Crhistmass audio carousel with snow aniamtion
+Animated Crhistmas audio Carousel with css snow aniamation
