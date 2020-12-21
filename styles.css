@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: ;
+    background-color: rgb(177, 27, 27);
+    overflow: hidden
+}
+
+section {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.snow1 {
+    background: url('s3.png');
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateOne 10s infinite linear;
+    overflow: hidden;
+}
+
+.snow2 {
+    background: url('s3.png');
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateTwo 10s infinite linear;
+    overflow: hidden;
+}
+
+.snow3 {
+    background: url('s3.png');
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateThree 10s infinite linear;
+    overflow: hidden;
+}
+
+@keyframes animateOne {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 100px 650px;
+    }
+}
+
+@keyframes animateTwo {
+    0% {
+        background-position: 0px -100px;
+    }
+    100% {
+        background-position: 0px 650px;
+    }
+}
+
+@keyframes animateThree {
+    0% {
+        background-position: 0px 100px;
+    }
+    100% {
+        background-position: 300px 650px;
+    }
+}
+
+.carousel {
+    max-width: 600px;
+    position: relative;
+    margin: 200 auto;
+    opacity: 0.9;
+    border: solid 2px rgb(214, 211, 200)
+}
+
+.carousel .carousel-item, .carousel .carousel-item-hidden {
+    display: none;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    opacity: 0.9;
+    height: 50vh;
+}
+
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+    border-radius: 50px;
+    background-color: white;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
